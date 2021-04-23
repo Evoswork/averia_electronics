@@ -19,7 +19,7 @@ class _RunState extends State<Run> {
       key: scaffoldKey,
       scaffoldMessengerKey: rootScaffoldMessengerKey,
       navigatorKey: navigator,
-      theme: ThemeDataProject.light,
+      theme: ThemeDataProject.black,
       home: MainScreen(),
     );
   }

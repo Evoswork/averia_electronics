@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 /// Тема для приложения
 abstract class ThemeDataProject {
-  static ThemeData get light => _initThemeLight();
+  static ThemeData get black => _initThemeLight();
 
   static ThemeData _initThemeLight() {
     return ThemeData(

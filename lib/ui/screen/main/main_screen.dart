@@ -1,6 +1,7 @@
 import 'package:averia_electronics/domain/client/card_client.dart';
 import 'package:averia_electronics/res/assets.dart';
 import 'package:averia_electronics/res/strings.dart';
+import 'package:averia_electronics/res/text_styles.dart';
 import 'package:averia_electronics/ui/common/default_button.dart';
 import 'package:averia_electronics/ui/screen/main/main_wm.dart';
 import 'package:flutter/material.dart' hide Action;
@@ -26,7 +27,7 @@ class _MainScreenState extends WidgetState<MainWidgetModel> {
       appBar: AppBar(
         title: Text(
           menuText,
-          style: TextStyle(color: Colors.white),
+          style: textMedium20,
         ),
         actions: [
           Padding(
@@ -117,7 +118,7 @@ class _CardWidget extends StatelessWidget {
             alignment: Alignment.bottomLeft,
             child: Text(
               _card.name,
-              style: const TextStyle(color: Colors.white),
+              style: textMedium14,
             ),
           ),
         ),
