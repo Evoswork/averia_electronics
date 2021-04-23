@@ -3,6 +3,6 @@ import 'package:averia_electronics/ui/run/run.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  Injector();
+  Injector.instance;
   runApp(Run());
 }

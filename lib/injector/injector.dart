@@ -6,7 +6,7 @@ import 'package:get_it/get_it.dart';
 GetIt getIt = GetIt.instance;
 
 class Injector {
-  Injector() {
+  Injector._privateConstructor() {
     getIt.registerSingleton<GlobalKey<NavigatorState>>(
       GlobalKey<NavigatorState>(),
       signalsReady: false,
@@ -30,4 +30,8 @@ class Injector {
       dependsOn: [CardsRepository],
     );
   }
+
+  static final Injector _instance = Injector._privateConstructor();
+
+  static Injector get instance => _instance;
 }
